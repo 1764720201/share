@@ -1,0 +1,148 @@
+{
+	"pages": [{
+			"path": "pages/Home/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "black"
+			}
+		}, {
+			"path": "pages/Repast/index",
+			"style": {
+				"navigationBarTitleText": "就餐"
+			}
+		},
+		{
+			"path": "pages/NoteDetail/index",
+			"style": {
+				"navigationBarTitleText": "笔记详情"
+			}
+		},
+		{
+			"path": "pages/StoreDetail/index",
+			"style": {
+				"navigationBarTitleText": "店铺详情"
+			}
+		},
+		{
+			"path": "pages/ChooseCity/index",
+			"style": {
+				"navigationBarTitleText": "选择城市"
+			}
+		},
+		{
+			"path": "pages/Checkstand/index",
+			"style": {
+				"navigationBarTitleText": "收银台"
+			}
+		},
+		{
+			"path": "pages/Payment/index",
+			"style": {
+				"navigationBarTitleText": "订单确认"
+			}
+		},
+		{
+			"path": "pages/OrderDetail/index",
+			"style": {
+				"navigationBarTitleText": "订单详情"
+			}
+		}, {
+			"path": "pages/Search/index",
+			"style": {
+				"navigationBarTitleText": "搜索"
+			}
+		}, {
+			"path": "pages/Collect/index",
+			"style": {
+				"navigationBarTitleText": "收藏"
+			}
+		}, {
+			"path": "pages/Mine/index",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
+		{
+			"path": "pages/Order/index",
+			"style": {
+				"navigationBarTitleText": "我的订单"
+			}
+		},
+		{
+			"path": "pages/Refund/index",
+			"style": {
+				"navigationBarTitleText": "退款"
+			}
+		}, {
+			"path": "pages/Homepage/index",
+			"style": {
+				"navigationBarTitleText": "个人主页"
+			}
+		}, {
+			"path": "uni_modules/uni-id-pages/pages/userinfo/userinfo",
+			"style": {
+				"navigationBarTitleText": "个人资料"
+			}
+		},
+		{
+			"path": "uni_modules/uni-id-pages/pages/userinfo/avatar/index",
+			"style": {
+				"navigationBarTitleText": "修改头像"
+			}
+		},
+		{
+			"path": "uni_modules/uni-id-pages/pages/userinfo/cropImage/cropImage",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}, {
+			"path": "uni_modules/uni-id-pages/pages/login/login-withoutpwd",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"easycom": {
+		"custom": {
+			"^u-(.*)": "vk-uview-ui/components/u-$1/u-$1.vue"
+		}
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#e98f36",
+		"borderStyle": "white",
+		"backgroundColor": "#F8F8F8",
+		"list": [{
+				"iconPath": "static/tabbar/首页.png",
+				"selectedIconPath": "static/tabbar/首页-copy.png",
+				"pagePath": "pages/Home/index",
+				"text": "首页"
+			},
+			{
+				"iconPath": "static/tabbar/餐厅.png",
+				"selectedIconPath": "static/tabbar/餐厅-copy.png",
+				"pagePath": "pages/Repast/index",
+				"text": "就餐"
+			},
+			{
+				"iconPath": "static/tabbar/收藏3.png",
+				"selectedIconPath": "static/tabbar/收藏3-copy.png",
+				"pagePath": "pages/Collect/index",
+				"text": "收藏"
+			},
+			{
+				"iconPath": "static/tabbar/我的.png",
+				"selectedIconPath": "static/tabbar/我的-copy.png",
+				"pagePath": "pages/Mine/index",
+				"text": "我的"
+			}
+		]
+	}
+}

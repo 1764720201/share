@@ -1,0 +1,57 @@
+// 文档教程: https://uniapp.dcloud.net.cn/uniCloud/schema
+{
+	"bsonType": "object",
+	"required": ["store_name", "total", "goods", "time", "tableware", "pay_mode"],
+	"permission": {
+		"read": true,
+		"create": "auth.uid!=null",
+		"update": "auth.uid!=null",
+		"delete": "auth.uid!=null"
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"goods": {
+			"bsonType": "array"
+		},
+		"user_id": {
+			"bsonType": "string",
+			"foreignKey": "uni-id-users._id",
+			"defaultValue": {
+				"$env": "uid"
+			}
+		},
+		"create_time": {
+			"bsonType": "timestamp",
+			"defaultValue": {
+				"$env": "now"
+			}
+		},
+		"status": {
+			"bsonType": "int",
+			"defaultValue": 0,
+			"description": "0表示未支付 1表示已支付 2表示退款"
+		},
+		"time": {
+			"bsonType": "string",
+			"description": "取餐时间"
+		},
+		"tableware": {
+			"bsonType": "string",
+			"description": "餐具"
+		},
+		"total": {
+			"bsonType": "double",
+			"description": "总金额"
+		},
+		"store_name": {
+			"bsonType": "string",
+			"description": "店名"
+		},
+		"pay_mode": {
+			"bsonType": "string",
+			"description": "支付方式"
+		}
+	}
+}
